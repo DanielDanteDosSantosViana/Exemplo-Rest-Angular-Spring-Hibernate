@@ -1,0 +1,32 @@
+table {
+  border: 1px solid #666;   
+    width: 100%;
+}
+th {
+  background: #f8f8f8; 
+  font-weight: bold;    
+    padding: 2px;
+}
+
+a.logo {
+background: url(http://athen.as/assets/presets/preset1/logo-643aac19dcd933ae71dd0bf1c1628a49.png) no-repeat 50%;
+width: 295px;
+height: 67px;
+}
+
+footer.footer-text {
+color: #747474;
+text-align: center;
+font-style: italic;
+font-size: 14px;
+}
+
+p {
+margin: 0 0 12px;
+line-height: 24px;
+font-weight: 300;
+}
+
+.footer {
+margin: 0 auto;
+}

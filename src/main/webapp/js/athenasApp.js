@@ -1,12 +1,16 @@
 
 angular.module("FuncionarioModuloServices", []);
 angular.module("FuncionarioModuloController", []);
+angular.module("DownloadModuloController", []);
+angular.module("DownloadModuloServices", []);
 
 /* APP */
 var app = angular.module("athenasApp", [
 "ngRoute",
 "FuncionarioModuloController",
-"FuncionarioModuloServices"
+"FuncionarioModuloServices",
+"DownloadModuloController",
+"DownloadModuloServices"
 ]);
 
 app.config(function($routeProvider){
@@ -31,6 +35,12 @@ app.config(function($routeProvider){
 			{
 				templateUrl:'partials/lista.tpl.html',
 			});
+	
+	$routeProvider.when('/download/pdf',
+			{
+				templateUrl:'partials/download.tpl.html',
+			});
+
 
 	
 	$routeProvider.otherwise({redirectTo:'/funcionario/listar'});

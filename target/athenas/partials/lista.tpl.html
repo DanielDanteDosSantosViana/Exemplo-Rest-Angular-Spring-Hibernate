@@ -1,0 +1,26 @@
+<div data-ng-controller="ListaFuncionarioPresenter">
+             <a href="#/funcionario/cadastro">Adicionar</a>
+				<table>
+				    <tr>
+				        <th>Nome</th>
+				        <th>Sobrenome</th>
+				        <th>Cargo</th>
+				        <th>Acoes</th>
+				    </tr>
+				    <tr ng-repeat="funcionario in funcionarios">
+				        <td>{{funcionario.nome}}</td>
+				        <td>{{funcionario.sobrenome}}</td>
+				        <td>{{funcionario.cargo}}</td>
+				        <td>
+				        	<td><a href="##/funcionario/editar/{{funcionario.id}}">editar</a><td>
+				        	<td><a href="#/" data-ng-click="remove(funcionario.id)">remover</a><td>
+				        
+				        </td>
+				    </tr>
+				</table>			  
+
+               <!-- response message -->
+            <div data-ng-hide="!response">{{ response }}</div>
+			
+
+</div>

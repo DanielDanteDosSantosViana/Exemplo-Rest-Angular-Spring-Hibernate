@@ -1,0 +1,29 @@
+<center>
+<div data-ng-controller="EditarFuncionarioPresenter">
+	<h3>EDITAR FUNCIONÁRIO</h3>
+    <form name="formFuncionario">
+		<table>
+					    <tr>
+					        <th>Nome</th>
+					        <td><input type="text" name="nomeFuncionario" ng-model="nome" required></td>
+							<td><span class="error" ng-show="formFuncionario.nomeFuncionario.$error.required">
+							      Required!</span><br></td>
+
+					    </tr>
+					    <tr>
+					        <th>SobreNome</th>
+						    <td><input type="text" name="sobreNome" ng-model="sobrenome" ng-minlength="3" ng-maxlength="10"></td>
+					    </tr>
+					    <tr>
+					        <th>Cargo</th>
+							<td><input type="text" name="cargo" ng-model="cargo" ng-minlength="3" ng-maxlength="20"></td>	
+					    </tr>
+		</table>					    
+ 	<button  data-ng-click="command()">Editar</button>
+	<a href="#/funcionario/lista">Voltar</a>
+             
+  </form>
+      <h1 data-ng-hide="!response">{{ response }}</h1>
+
+</div>
+</center>

@@ -1,0 +1,10 @@
+br/com/athenas/infrastructure/apresentation/view/http/util/ResultadoResposta.class
+br/com/athenas/infrastructure/apresentation/view/http/funcionario/FuncionarioViewJSON.class
+br/com/athenas/domain/entity/Funcionario.class
+br/com/athenas/persistence/IFuncionarioDAO.class
+br/com/athenas/service/funcionario/FuncionarioService.class
+br/com/athenas/infrastructure/apresentation/view/http/util/OperacaoRequest.class
+br/com/athenas/infrastructure/persistence/GenericDAO.class
+br/com/athenas/domain/repository/FuncionarioRepository.class
+br/com/athenas/infrastructure/apresentation/view/http/download/DownloadViewJSON.class
+br/com/athenas/infrastructure/persistence/FuncionarioDAO.class
